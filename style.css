@@ -4,9 +4,15 @@
     border: border-box;
 }
 
+
+/* box 1 */
+
 nav{
 height: 60px;
 background-color: #0f1111;
+color: white;
+display: flex;
+align-items: center;
 }
 
 .nav-logo{
@@ -30,4 +36,23 @@ background-color: #0f1111;
 
 .border:hover{
  border: 1.5px solid white;
+}
+
+/* box 2 */
+
+.nav-loc-icon{
+    display: flex;
+    align-items: center;
+}
+
+.nav-p1{
+    font-size: 0.75rem;
+    color: #cccc;
+    margin-left: 14px;
+}
+
+.nav-p2{
+    font-size: 1rem;
+    margin-left: 2px;
+    font-weight: 700;
 }
