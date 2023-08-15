@@ -190,6 +190,7 @@ span{
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: #e2e7e6;
+    padding-bottom: 15px;
 }
 
 
@@ -222,11 +223,6 @@ span{
 }
 
 /* Footer */
-
-
-footer{
-    margin-top: 15px;
-}
 
 /* foot panel 1 */
 .foot-panel1{
