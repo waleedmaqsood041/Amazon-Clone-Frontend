@@ -1,63 +1,78 @@
 *{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    border: border-box;
+    box-sizing: border-box;
 }
 
 
 /* nav-box 1 */
 
 nav{
-height: 60px;
-background-color: #0f1111;
-color: white;
-display: flex;
-align-items: center;
-justify-content: space-evenly;
+    height: 4rem;
+    background-color:#0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
 }
 
+.container-fluid{
+    height: 6rem;
+}
 .nav-logo{
-    width: 113px;
-    height: 60px;
+    width: 7rem;
+    height: 3rem; 
+    margin-right: 0.6rem;
+    /* margin-bottom: 0.45rem; */
     justify-content: center;
-    margin-right: 5px;
-    margin-left: -15px;
 }
 
 .logo{
     background-image: url("/images/amazon_logo.png");
     background-size: cover;
-    width: 113px;
-    height: 70px;
-    margin: -1px;
+    width: 7rem;
+    height: 3rem;
 }
 
-.border{
-    border: 1.5px solid transparent;
-}
+/* .border{
+    border: 1px solid white;
+} */
 
 .border:hover{
-    border: 1.5px solid white;
+    border: 1px solid white;
+   
 }
 
 
 /* nav-box 2 */
+
+.nav-address{
+    padding-right: 0.6rem;
+}
 
 .nav-loc-icon{
     display: flex;
     align-items: center;
 }
 
+.nav-loc-icon i{
+    padding-bottom: 1.8rem;
+}
+
 .nav-p1{
-    font-size: 0.75rem;
     color: #cccc;
-    margin-left: 14px;
+    font-size: 0.75rem;
+    margin-left: 0.9rem;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
 }
 
 .nav-p2{
     font-size: 1rem;
-    margin-left: 2px;
+    margin-left: 0.125rem;
     font-weight: 700;
+    margin-top: -0.2rem;
+    margin-bottom: 1.5rem;
 }
 
 
@@ -65,12 +80,14 @@ justify-content: space-evenly;
 
 .nav-search{
     display: flex;
-    width: 56rem;
+    width: 67%;
     height: 2.5rem;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     justify-content: space-evenly;
-    
+    margin-left: 1rem;
+    margin-right: 0.4rem;
 }
+
 .search-input{
     width: 100%;
     border: none;
@@ -111,26 +128,36 @@ justify-content: space-evenly;
 .nav-lang{
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
 }
 
 .lang-select{
-    background-color:#0f1111;
+    background-color:transparent;
     color: white;
-    font-size:1rem;
-    width: 45px;
-    height: 40px;
+    font-size:0.85rem;
+    width: 2.5rem;
+    height: 2.5rem;
     font-weight: 700;
     border: none;
 }
 
-
 .flag-icon{
-    padding-top: 4px;
+    padding-top: -0.75rem;
 }
 
+.flag-icon img{
+    width: 1.2rem; 
+    height:1.4rem;
+}
 
-/* nav-box 4 */
+/* nav-box 5 */
+.nav-signin{
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
 span{
     font-size: 0.75rem;
 }
@@ -139,9 +166,22 @@ span{
     font-size: 0.85rem;
     font-weight: 700;
 }
-
+.nav-signin p {
+    white-space: nowrap;
+    margin-bottom: 0rem;
+}
 
 /* nav-box 6 */
+.nav-return p{
+    white-space: nowrap;
+    margin-bottom: 0rem;
+}
+.nav-return{
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+/* nav-box 7 */
 
 .nav-cart i{
     font-size: 25px;
@@ -149,9 +189,10 @@ span{
 
 .nav-cart {
     font-size: 0.875rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    white-space: nowrap;
 }
-
-
 
 /* panel */
 .panel{
@@ -172,17 +213,14 @@ span{
 .panel-opt{
     width: 95%;
 }
-
+ .panel i{
+    margin-left: 0.8rem;
+    margin-top: 0.3rem;
+    margin-right: 0.3rem;
+ }
 
 
 /* Hero section */
-
-.hero-section{
-    background-image: url("/images/hero_image.jpg");
-    height: 350px;
-    background-size: cover;
-}
-
 
 /* content section */
 
@@ -261,7 +299,7 @@ ul a{
     color: #dddddd;
 }
 
-ul li{
+.foot-panel2 ul li{
     margin-top: 10px
 }
 
@@ -309,3 +347,80 @@ ul p{
 .pages a{
     padding-left: 10px;
 }
+
+.icon {
+    display: none; 
+}
+
+.bar-color{
+    color: white;
+}
+.navbar .navbar-toggler{
+    border:0px solid transparent;
+    padding-right: 0rem;
+    margin-bottom: 0.75rem;
+}
+.navbar .navbar-toggler-icon{
+    /* Hide the default content visually */
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    border: none;
+    background: none;
+    padding: 0;
+}
+.card{
+    --bs-card-border-radius:0rem!important;
+    border: none!important;
+}
+
+@media (min-width: 320px) and (max-width: 991.98px) {
+    nav{
+        height: 100%;
+    }
+    .nav-logo{
+        margin-top: -0.55rem;
+        margin-bottom: 0.3rem;
+        padding-top:0rem;
+        width:80%
+    }
+    .nav-search{
+        height: 2.8rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        width: 100%;
+        padding: 0 0.75rem;
+    }
+    .navbar{
+        background-color: #232F3E;
+    }
+    .container-fluid{
+        --bs-gutter-x: 0rem!important;
+    }
+    .card{
+        --bs-card-border-radius:0.375rem;
+        /* border: 1px solid ; */
+    }
+}
+
+@media (max-width: 461px) {
+    .panel {
+        display: flex;
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+    .panel i{
+        padding-left: 1rem;
+     }
+}
+  
+
+@media (max-width: 612px) {
+    .hero-section{
+        overflow-x: scroll;
+    }
+}
+
+
+   
