@@ -184,7 +184,7 @@ span{
 /* nav-box 7 */
 
 .nav-cart i{
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 .nav-cart {
@@ -197,7 +197,7 @@ span{
 /* panel */
 .panel{
     display: flex;
-    height: 40px;
+    height: 2.5rem;
     background-color: #232F3E;
     color: white;
     align-items: center;
@@ -206,7 +206,7 @@ span{
 
 .panel-opt p{
     display: inline;
-    margin-left: 15px;
+    margin-left: 1rem;
     font-size: 0.875rem;
 }
 
@@ -221,6 +221,11 @@ span{
 
 
 /* Hero section */
+.hero-section{
+    background-image: url("/images/hero_image.jpg");
+    height: 22rem;
+    background-size: cover ;
+}
 
 /* content section */
 
@@ -230,22 +235,21 @@ span{
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: #e2e7e6;
-    padding-bottom: 15px;
+    padding-bottom: 1rem;
 }
 
 
 .box{
-    border: 2px solid black;
-    height: 400px;
+    height: 25rem;
     width: 23%;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     background-color: white;
-    padding: 20px 0 10px 0;
+    padding: 1.25rem 0 0.625rem 0;
     border: none;
 }
 
 .box-img{
-    height: 300px;
+    height: 18.75rem;
     background-size: cover;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -256,17 +260,22 @@ span{
     margin-right: 1rem;
 }
 
-.box-content p{
-    font-size:13px;
-    margin-top: 25px;
+.card-text{
+    font-size:1rem;
+    margin-top: 1.5rem;
     color:#007185;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 /* Footer */
 
 /* foot panel 1 */
 .foot-panel1{
-    height: 50px;
+    height: 3.125rem;
     background-color: #37475A;
     color: white;
     display: flex;
@@ -286,12 +295,13 @@ span{
     background-color: #222f3d;
     color: white;
     justify-content: space-evenly;
-    height: 300px;
+    height: auto;
+    flex-wrap: wrap;
 }
 
-ul{
+.foot-panel2 ul{
     list-style:none;
-    margin-top: 25px;
+    margin-top: 1.5rem;
 }
 
 ul a{
@@ -300,12 +310,27 @@ ul a{
 }
 
 .foot-panel2 ul li{
-    margin-top: 10px
+    margin-top: 0.7rem;
+    margin-bottom: 0.625rem;
 }
 
 ul p{
     font-weight: 700;
 }
+
+
+
+
+
+/* .foot-panel2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1; } */
+
+
+
+
 
 /* foot panel 3 */
 
@@ -313,7 +338,7 @@ ul p{
     background-color: #222f3d;
     color: white;
     border-top: 0.1px solid whitesmoke;
-    height: 90px;
+    height: 5.625rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -322,8 +347,8 @@ ul p{
 .foot-logo{
     background-image: url("/images/amazon_logo.png");
     background-size: cover;
-    width: 100px;
-    height: 50px;
+    width: 6.25rem;
+    height: 3.125rem;
 }
 
 
@@ -332,25 +357,23 @@ ul p{
 .foot-panel4{
     background-color: #0f1111;
     color:#dddddd;
-    height: 100px;
+    height: 6.25rem;
     font-size: 0.75rem;
     text-align: center;
 }
 
 .pages{
-  padding-top: 30px;
+  padding-top: 1.875rem;
 }
 .copyright{
-   padding-top: 8px;
+   padding-top: 0.5rem;
 }
 
 .pages a{
-    padding-left: 10px;
+    padding-left: 0.625rem;
 }
 
-.icon {
-    display: none; 
-}
+
 
 .bar-color{
     color: white;
@@ -404,6 +427,17 @@ ul p{
     }
 }
 
+
+
+
+@media (max-width: 767px) {
+    .foot-panel2 ul {
+        overflow: hidden;
+        max-height: 12rem; 
+        overflow-y: auto;  
+    }
+}
+
 @media (max-width: 461px) {
     .panel {
         display: flex;
@@ -414,13 +448,13 @@ ul p{
         padding-left: 1rem;
      }
 }
-  
 
-@media (max-width: 612px) {
+
+/* @media (max-width: 612px) {
     .hero-section{
         overflow-x: scroll;
     }
-}
+} */
 
 
    
