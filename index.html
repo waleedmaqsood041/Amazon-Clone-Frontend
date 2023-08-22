@@ -9,19 +9,78 @@
         <link rel="icon" type="image/x-icon" href="/images/amazon-icon_image.png">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-     <body>
+    </head>
+    <body>
         <header>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid justify-content-start ">
-                    <button class="navbar-toggler d-flex d-block d-sm-block d-md-block d-lg-none d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="btn btn-primary d-block d-sm-block d-md-block d-lg-none d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                         <i class="fa-solid fa-bars bar-color"></i>
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    </button> 
+
+                    <div class="offcanvas offcanvas-start d-block d-sm-block d-md-block d-lg-none d-xl-none" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                        <div class="container h-container">
+                            <div class="row">
+                                    
+                                <div class="h-top">
+                                    <div class="nav-signin">
+                                        <p><span class="h-title">Hello, sign in</span></p>
+                                        <p class="nav-weight h-title">Account & Lists</p>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                            
+                                <div class="h-bottom ">
+                                    <div class="h-title" >
+                                        <div class="h-title-l1">Browse</div>
+                                        <div class="h-title-l2">Amazon</div>
+                                    </div>
+                                </div>
+  
+                            </div>
+                        </div>
+                     
+                        <div class="offcanvas-body d-block d-sm-block d-md-block d-lg-none d-xl-none"> 
+                          <ul class="navbar-nav mb-2 ul-color">
+                                <li class="nav-item nav-lang mt-1 ">
+                                    <div class="flag-icon">
+                                        <img width="25" height="28" src="https://img.icons8.com/color/48/usa.png" alt="usa"/>
+                                    </div>
+                                    <select class="lang-select">
+                                        <option class="bl-color">EN - Enlgish</option>
+                                            <option >ES - Español </option>
+                                            <option >DE - Deutsch</option>
+                                            <option >AR - العربية </option>
+                                            <option >PT - Português</option>
+                                        </select>
+                                </li> 
+                                <li class="nav-item">
+                                    <div class="nav-signin">
+                                        <p><span>Hello, sign in</span></p>
+                                        <p class="nav-weight">Account & Lists</p>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="nav-return">
+                                        <p><span>Returns</span></p>
+                                        <p class="nav-weight">& Orders</p>
+                                    </div>
+                                </li> 
+                     
+                                <li class="nav-item mt-2">
+                                    <div class="nav-cart nav-weight">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        Cart
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
                     <div class="nav-logo">
                         <div class="nav-brand logo"></div> 
                     </div>
-        
-                        
+
                     <div class="nav-address mt-1 d-none d-lg-block">
                         <p class="nav-p1">Deliver to</p>
                         <div class="nav-loc-icon">
@@ -39,65 +98,29 @@
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                     </div>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mb-2"> 
-                            <li class="nav-item nav-lang mt-1">
-                                <div class="flag-icon">
-                                    <img width="25" height="28" src="https://img.icons8.com/color/48/usa.png" alt="usa"/>
-                                </div>
-                                <select class="lang-select">
-                                        <option >EN - Enlgish</option>
-                                        <option >ES - Español </option>
-                                        <option >DE - Deutsch</option>
-                                        <option >AR - العربية </option>
-                                        <option >PT - Português</option>
-                                </select>
-                            </li> 
-                            <li class="nav-item">
-                                <div class="nav-signin">
-                                    <p><span>Hello, sign in</span></p>
-                                    <p class="nav-weight">Account & Lists</p>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="nav-return">
-                                    <p><span>Returns</span></p>
-                                    <p class="nav-weight">& Orders</p>
-                                </div>
-                            </li> 
-                     
-                            <li class="nav-item mt-2">
-                                <div class="nav-cart nav-weight">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                    Cart
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </nav>
         
           
             <div class="panel">
-                <div class="panel-body d-flex">
+                <!-- <div class="panel-body d-flex">
                     <i class="fa-solid fa-bars"></i>
                     All
-                </div>
+                </div> -->
 
-                <div class="panel-opt ">
-                    <p>Today's Deals</p>
+                <div class="panel-opt">
+                    <p class="panel-start">Today's Deals</p>
                     <p>Customer Service</p>
                     <p>Registry</p>
                     <p>Gift Cards</p>
                     <p>Sell</p>
                 </div>
             </div>
+            
         </header>
-    <section class="hero-section"></section>
+        
+        <section class="hero-section"></section>
     
-    
-
         <section class="content-section">
             <div class="card box">
                 <div class="card-body">
@@ -120,116 +143,118 @@
                     <p class="card-text">See more</p>
                 </div>
             </div>
-        <div class=" card box">
-            <div class="card-body">
-                <h2 class="card-title">Tehcnology</h2>
-                <div class="box-img" style="background-image: url('images/box4_image.jpg');"></div>
-                <p class="card-text">See more</p>
-            </div>
-        </div>
-        <div class="card box">
-            <div class="card-body">
-                <h2 class="card-title">Toys Under $30</h2>
-                <div class="box-img" style="background-image: url('images/box5_image.jpg');"></div>
-                <p class="card-text">Shop now</p>
-            </div>
-        </div>
-        <div class="card box">
-            <div class="card-body">
-                <h2 class="card-title">Home & Kitchen Under $30</h2>
-                <div class="box-img" style="background-image: url('images/box6_image.jpg');"></div>
-                <p class="card-text">Shop now</p>
-            </div>
-        </div>
-        <div class="card box">
-            <div class="card-body">
-                <h2 class="card-title">Beauty picks</h2>
-                <div class="box-img" style="background-image: url('images/box7_image.jpg');"></div>
-                <p class="card-text">Shop now</p>
-            </div>
-        </div>
-        <div class="card box">
-            <div class="card-body">
-                <h2 class="card-title">Home refresh ideas</h2>
-                <div class="box-img" style="background-image: url('images/box8_image.jpg');"></div>
-                <p class="card-text">Shop Kitchen updgrades</p>
-            </div>
-        </div>
-    </section>        
-
-
-    <footer>
-        <div class="foot-panel1">
-           <a href="/">Back to top</a> 
-        </div>
-
-        <div class="foot-panel2">
-            <div class="container">
-                <div class="row">
-                <div class="col-sm-6 col-md-3">
-                    <ul class="list-unstyled">
-                        <li><p>Get to Know Us</p></li>
-                        <li><a>Careers</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>About Amazon</a></li>
-                        <li><a>Investor Relations</a></li>
-                        <li><a>Amazon Devices</a></li>
-                        <li><a>Amazon Science</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <ul class="list-unstyled">
-                        <li><p>Make Money with Us</p></li>
-                        <li><a>Sell products on Amazon</a></li>
-                        <li><a>Sell on Amazon Business</a></li>
-                        <li><a>Sell apps on Amazon</a></li>
-                        <li><a>Become an Affiliate</a></li>
-                        <li><a>Advertise Your Products</a></li>
-                        <li><a>Self-Publish with Us</a></li>
-                        <li><a>Host an Amazon Hub</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <ul class="list-unstyled">
-                        <li><p>Amazon Payment Products</p></li>
-                        <li><a>Amazon Business Card</a></li>
-                        <li><a>Shop with Points</a></li>
-                        <li><a>Reload Your Balance</a></li>
-                        <li><a>Amazon Currency Converter</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <ul class="list-unstyled">
-                        <li><p>Let Us Help You</p></li>
-                        <li><a>Amazon and COVID-19</a></li>
-                        <li><a>Your Account</a></li>
-                        <li><a>Your Orders</a></li>
-                        <li><a>Shipping Rates & Policies</a></li>
-                        <li><a>Returns & Replacements</a></li>
-                        <li><a>Manage Your Content and Devices</a></li>
-                        <li><a>Amazon Assistant</a></li>
-                        <li><a>Help</a></li>
-                    </ul>
+            <div class=" card box">
+                <div class="card-body">
+                    <h2 class="card-title">Tehcnology</h2>
+                    <div class="box-img" style="background-image: url('images/box4_image.jpg');"></div>
+                    <p class="card-text">See more</p>
                 </div>
             </div>
-        </div>
-    </div>
+            <div class="card box">
+                <div class="card-body">
+                    <h2 class="card-title">Toys Under $30</h2>
+                    <div class="box-img" style="background-image: url('images/box5_image.jpg');"></div>
+                    <p class="card-text">Shop now</p>
+                </div>
+            </div>
+            <div class="card box">
+                <div class="card-body">
+                    <h2 class="card-title">Home & Kitchen Under $30</h2>
+                    <div class="box-img" style="background-image: url('images/box6_image.jpg');"></div>
+                    <p class="card-text">Shop now</p>
+                </div>
+            </div>
+            <div class="card box">
+                <div class="card-body">
+                    <h2 class="card-title">Beauty picks</h2>
+                    <div class="box-img" style="background-image: url('images/box7_image.jpg');"></div>
+                    <p class="card-text">Shop now</p>
+                </div>
+            </div>
+            <div class="card box">
+                <div class="card-body">
+                    <h2 class="card-title">Home refresh ideas</h2>
+                    <div class="box-img" style="background-image: url('images/box8_image.jpg');"></div>
+                    <p class="card-text">Shop Kitchen updgrades</p>
+                </div>
+            </div>
+        </section>        
 
-        <div class="foot-panel3">
-            <a href="/"><div class="foot-logo">
-            </div></a>
-        </div>
+    
+        <footer>
+
+            <div class="foot-panel1">
+            <a href="/">Back to top</a> 
+            </div>
+
+            <div class="foot-panel2">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <ul class="list-unstyled">
+                            <li><p>Get to Know Us</p></li>
+                            <li><a>Careers</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>About Amazon</a></li>
+                            <li><a>Investor Relations</a></li>
+                            <li><a>Amazon Devices</a></li>
+                            <li><a>Amazon Science</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <ul class="list-unstyled">
+                            <li><p>Make Money with Us</p></li>
+                            <li><a>Sell products on Amazon</a></li>
+                            <li><a>Sell on Amazon Business</a></li>
+                            <li><a>Sell apps on Amazon</a></li>
+                            <li><a>Become an Affiliate</a></li>
+                            <li><a>Advertise Your Products</a></li>
+                            <li><a>Self-Publish with Us</a></li>
+                            <li><a>Host an Amazon Hub</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <ul class="list-unstyled">
+                            <li><p>Amazon Payment Products</p></li>
+                            <li><a>Amazon Business Card</a></li>
+                            <li><a>Shop with Points</a></li>
+                            <li><a>Reload Your Balance</a></li>
+                            <li><a>Amazon Currency Converter</a></li>
+                        </ul>
+                    </div>
+                        <div class="col-sm-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li><p>Let Us Help You</p></li>
+                                <li><a>Amazon and COVID-19</a></li>
+                                <li><a>Your Account</a></li>
+                                <li><a>Your Orders</a></li>
+                                <li><a>Shipping Rates & Policies</a></li>
+                                <li><a>Returns & Replacements</a></li>
+                                <li><a>Manage Your Content and Devices</a></li>
+                                <li><a>Amazon Assistant</a></li>
+                                <li><a>Help</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="foot-panel3">
+                <a href="/">
+                    <div class="foot-logo"></div>
+                </a>
+            </div>
         
-        <div class="foot-panel4">
-            <div class="pages">
-                <a>Condtions of Use</a>
-                <a>Privacy Notice</a>
-                <a>Your Ads Privacy Choices</a>
+            <div class="foot-panel4">
+                <div class="pages">
+                    <a>Condtions of Use</a>
+                    <a>Privacy Notice</a>
+                    <a>Your Ads Privacy Choices</a>
+                </div>
+                <div class="copyright">
+                 © 1996-2023, Amazon.com, Inc. or its affiliates
+                </div>
             </div>
-            <div class="copyright">
-                © 1996-2023, Amazon.com, Inc. or its affiliates
-            </div>
-        </div>
-    </footer>
+        </footer>
     </body>
 </html>
