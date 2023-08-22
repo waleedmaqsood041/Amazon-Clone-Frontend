@@ -13,19 +13,19 @@
     <body>
         <header>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid justify-content-start ">
-                    <button class="btn btn-primary d-block d-sm-block d-md-block d-lg-none d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                <div class="container-fluid justify-content-start">
+                    <button class="btn pd-btn d-block d-sm-block d-md-block d-lg-none d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                         <i class="fa-solid fa-bars bar-color"></i>
                     </button> 
 
-                    <div class="offcanvas offcanvas-start d-block d-sm-block d-md-block d-lg-none d-xl-none" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas offcanvas-start off-wd d-block d-sm-block d-md-block d-lg-none d-xl-none" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                         <div class="container h-container">
                             <div class="row">
                                     
                                 <div class="h-top">
                                     <div class="nav-signin">
                                         <p><span class="h-title">Hello, sign in</span></p>
-                                        <p class="nav-weight h-title">Account & Lists</p>
+                                        <p class="h-weight">Account & Lists</p>
                                     </div>
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
@@ -39,12 +39,25 @@
   
                             </div>
                         </div>
-                     
+
+                        <a href="/" class="h-link">
+                            <div class="home-container">
+                                <div class="home-text">Amazon Home</div>
+                                <div class="home-icon"></div>
+                            </div>
+                        </a>
+
+                        <li class="seperator"></li>
+
                         <div class="offcanvas-body d-block d-sm-block d-md-block d-lg-none d-xl-none"> 
                           <ul class="navbar-nav mb-2 ul-color">
+                               
+                                    
+                                
+                                
                                 <li class="nav-item nav-lang mt-1 ">
                                     <div class="flag-icon">
-                                        <img width="25" height="28" src="https://img.icons8.com/color/48/usa.png" alt="usa"/>
+                                        <img src="https://img.icons8.com/color/48/usa.png" alt="usa"/>
                                     </div>
                                     <select class="lang-select">
                                         <option class="bl-color">EN - Enlgish</option>
@@ -54,12 +67,7 @@
                                             <option >PT - Português</option>
                                         </select>
                                 </li> 
-                                <li class="nav-item">
-                                    <div class="nav-signin">
-                                        <p><span>Hello, sign in</span></p>
-                                        <p class="nav-weight">Account & Lists</p>
-                                    </div>
-                                </li>
+                               
                                 <li class="nav-item">
                                     <div class="nav-return">
                                         <p><span>Returns</span></p>
@@ -98,9 +106,38 @@
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                     </div>
+                    <div class="nav-lang dn-lang">
+                        <div class="flag-icon">
+                            <img src="https://img.icons8.com/color/48/usa.png" alt="usa"/>
+                        </div>
+                        <select class="lang-select">
+                            <option >EN - Enlgish</option>
+                            <option >ES - Español </option>
+                            <option >AR - العربية </option>
+                            <option >DE - Deutsch</option>
+                            <option >PT - Português</option>
+                        </select>
+                    </div>
+        
+                    <div class="nav-signin dn-signin">
+                        <p><span>Hello, sign in</span></p>
+                        <p class="nav-weight">Account & Lists</p>
+                    </div>
+        
+                    <div class="nav-return dn-return">
+                        <p><span>Returns</span></p>
+                        <p class="nav-weight">& Orders</p>
+                    </div>
+        
+                    <div class="nav-cart nav-weight dn-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Cart
+                    </div>
                 </div>
             </nav>
-        
+
+                
+           
           
             <div class="panel">
                 <!-- <div class="panel-body d-flex">
