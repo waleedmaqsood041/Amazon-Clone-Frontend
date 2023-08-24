@@ -605,7 +605,7 @@ ul p{
         display: none;
     }
   }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .foot-panel2 ul {
         overflow: hidden;
         max-height: 12rem; 
