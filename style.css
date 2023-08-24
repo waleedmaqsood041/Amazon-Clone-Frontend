@@ -270,7 +270,7 @@ span{
 }
 
 .box-img{
-    height: 18.75rem;
+    height: 15.75rem;
     background-size: cover;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -647,78 +647,31 @@ ul p{
 }
 
 
-/* @media (min-width: 375px) and (max-width: 575px) {
+@media (max-width: 312px) {
+    .content-section {
+        padding-right: 3rem;
+        padding-left: 3rem;
+        padding-top: 3rem;
+    }
     .box {
-        height: 22rem; 
-        padding: 0.875rem 0; 
+        height: 17.5rem!important;
+        width: 17rem;
     }
 
     .box-img {
-        height: 17rem;
-        margin-top: 0.75rem; 
-        margin-bottom: 0.75rem;
-    }
-
-    .card-title {
-        font-size: 1.375rem;
+        height: 10rem;
+        width: 15rem;
     }
 
     .card-text {
-        font-size: 0.9375rem;
-        margin-top: 1.25rem; 
-    }
-} */
-
-
-@media (max-width: 425px) {
-    .box {
-        height: 20rem; 
-    }
-
-    .box-img {
-        height: 15rem; 
-    }
-
-    .box-content {
-        margin: 0.5rem; 
-    }
-
-    .card-text {
-        font-size: 0.875rem; 
+        font-size: 0.8rem; 
     }
 
     .card-title {
-        font-size: 1.25rem; 
+        font-size: 1.1rem;
     }
 }
 
 
-@media (max-width: 375px) {
-    .box {
-        height: 18rem; 
-    }
 
-    .box-img {
-        height: 13rem; 
-    }
-
-    .card-title {
-        font-size: 1rem; 
-    }
-}
-
-
-@media (max-width: 320px) {
-    .box {
-        height: 16rem; 
-    }
-
-    .box-img {
-        height: 11rem; 
-    }
-
-    .card-text {
-        font-size: 0.75rem; 
-    }
-}
 
