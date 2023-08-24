@@ -224,11 +224,25 @@ span{
 }
 
 /* Hero section */
-.hero-section {
+
+/* .hero-section {
     background-image: url("/images/hero_image.jpg");
     height: 22rem;
     background-size: cover;
+} */
+
+
+.hero-image-section {
+    height: 23vw;
 }
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 
 
 /* content section */
@@ -633,7 +647,7 @@ ul p{
 }
 
 
-@media (min-width: 375px) and (max-width: 573px) {
+/* @media (min-width: 375px) and (max-width: 575px) {
     .box {
         height: 22rem; 
         padding: 0.875rem 0; 
@@ -653,4 +667,58 @@ ul p{
         font-size: 0.9375rem;
         margin-top: 1.25rem; 
     }
+} */
+
+
+@media (max-width: 425px) {
+    .box {
+        height: 20rem; 
+    }
+
+    .box-img {
+        height: 15rem; 
+    }
+
+    .box-content {
+        margin: 0.5rem; 
+    }
+
+    .card-text {
+        font-size: 0.875rem; 
+    }
+
+    .card-title {
+        font-size: 1.25rem; 
+    }
 }
+
+
+@media (max-width: 375px) {
+    .box {
+        height: 18rem; 
+    }
+
+    .box-img {
+        height: 13rem; 
+    }
+
+    .card-title {
+        font-size: 1rem; 
+    }
+}
+
+
+@media (max-width: 320px) {
+    .box {
+        height: 16rem; 
+    }
+
+    .box-img {
+        height: 11rem; 
+    }
+
+    .card-text {
+        font-size: 0.75rem; 
+    }
+}
+
