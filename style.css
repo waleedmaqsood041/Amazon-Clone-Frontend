@@ -44,27 +44,7 @@ nav{
 }
 
 
-.nav-title{
-    font-size: 0.75rem;
-    padding-right: 0.1rem;
-    padding-top: 0.4rem;
-}
 
-.arrow-icon{
-    font-size: 0.6rem;
-    padding-right: 0.3rem;
-    padding-top: 0.7rem;
-}
-
-.signin-icon{
-    font-size: 1.5rem;
-    padding-right: 1rem;
-}
-
-.cart-icon{
-    font-size: 1.6rem;
-    padding-bottom: 0.8rem;
-}
 
 /* nav-box 2 */
 
@@ -230,12 +210,47 @@ span{
     flex-flow: row nowrap;
 }
 
+.nav-right{
+    padding-top: 0.4rem;
+}
+
 .nav-left, .nav-right {
     display: flex;
     position: relative;
     width: auto;
 }
 
+.nav-signin-icon span i{
+    padding-top: 0.3rem;
+}
+
+
+.nav-title{
+    font-size: 0.75rem;
+    padding-right: 0.1rem;
+    padding-top: 0.3rem;
+    
+}
+
+.arrow-icon{
+    font-size: 0.6rem;
+    padding-right: 0.2rem;
+    padding-top: 0.6rem;
+    
+}
+
+.signin-icon{
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    
+
+}
+
+.cart-icon{
+    font-size: 1.6rem;
+    padding-bottom: 0.8rem;
+   
+}
 
 /* panel */
 .nav-panel-1{
